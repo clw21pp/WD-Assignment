@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Decorations.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="JavaScripts.js"></script>
+        <meta charset="utf-8">
+    </head>
+
+    <title>
+        Services
+    </title>
+
+    <body>
+        <header>
+            <nav>   
+                <ul>
+                    <a href="index.html" id="home_logo"> <img src="Images/cpu logo black background grey .png" alt="cpu logo" id="image1"> </a>
+                    <a href="Products.html" class="pagelinks" id="pagelink1" > Products </a>
+                    <a href="AboutUs.html" class="pagelinks" id="pagelink1" > About us </a>
+                    <a href="FindUs.html" class="pagelinks" id="pagelink1"> Location </a>
+                    <a href="Services.html" class="pagelinks" id="pagelink1" style="color: white;"> Services </a>
+                    <a href="Feedback.html" class="pagelinks" id="pagelink1"> Feedback </a>
+                    <a href="Login.html" class="pagelinks" id="pagelink2"> Login </a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article style="background-color: f2f2ef;">
+                <div class="container2" style="padding: 10px 0;">
+                    <div style="margin: 10px 0">
+                        <div style="margin: 0 0 0 20px;">
+                            <form action=GET id="">
+                                <label for="service" style="margin-right: 30px;">Type of Service</label>
+                                <select id="service" name="srve" onchange="changeFunc();">
+                                  <option value="deliver">Delivery</option>
+                                  <option value="shs">Second-hand selling</option>
+                                </select>
+                              </form>
+                        </div>
+
+                        <div style="display: inline-block;" id="delivering">
+                            <div style=" float: right; margin: -55px 20px 0 0;">
+                                <img src="Images/shipment-resized.png" alt=""> 
+                                <div style="display: inline-block; margin-left: 10px;"><span> Received by</span><span style="color: #6264f9;"> Sun, 5 Dec 2021</span>
+                                <div> Shipped with Standard Delivery</div></div>
+                            </div>
+    
+                            <div style="margin: 50px 20px 10px 20px">
+                                <div style="display: inline-block;"> Tracking Number</div> 
+                                <div style="float: right; color:#999;">SPP00001</div>
+                            </div>
+                            <div style="height: 1px; width: 98%; background-color: black; margin: 10px 10px;"></div>
+                            <div style="margin: 30px 130px 10px 130px;">
+                                <div style="display: inline-block;"> 26 Nov 23:28 </div>
+                                <div class="dot1" style="display: inline-block;"></div>
+                                <div style="display: inline-block; color: #6264f9;"> [China] Parcel has departed from Shenzhen sorting centre </div>
+                            </div>
+    
+                            <div style="margin: 30px 130px 10px 130px;">
+                                <div style="display: inline-block; color: #999;"> 26 Nov 23:28 </div>
+                                <div class="dot2" style="display: inline-block;"></div>
+                                <div style="display: inline-block; color: #999;"> [China] Parcel has arrived at Shenzhen sorting centre </div>
+                            </div>
+    
+                            <div style="margin: 30px 130px 10px 130px;">
+                                <div style="display: inline-block; color: #999;"> 26 Nov 23:28 </div>
+                                <div class="dot2" style="display: inline-block;"></div>
+                                <div style="display: inline-block; color: #999;"> [China] Sender has shipped your parcel </div>
+                            </div>
+    
+                            <div style="margin: 30px 130px 20px 130px;">
+                                <div style="display: inline-block; color: #999;"> 26 Nov 23:28 </div>
+                                <div class="dot2" style="display: inline-block;"></div>
+                                <div style="display: inline-block; color: #999;"> [China] Sender is preparing tro ship your parcel </div>
+                            </div>
+                        </div>
+
+                        <div style="display: none;" id="shs">
+                            
+                            <div style=" float: right; margin: -55px 20px 0 0;">
+                                <img src="Images/hand-resized.png" alt=""> 
+                                <div style="display: inline-block; margin-left: 10px; "><span> Checkup on</span><span style="color: #6264f9;"> Sun, 5 Dec 2021</span>
+                                <div> Currently displayed at Qb branch</div></div>
+                            </div>
+
+                            <div style="margin: 50px 20px 10px 20px">
+                                <div style="display: inline-block;"> Tracking Number</div> 
+                                <div style="float: right; color: #6264f9;">SHSPP0001</div>
+                            </div>
+                            
+                            <div style="height: 1px; width: 98%; background-color: black; margin: 10px 10px;"></div>
+
+                                <div style="margin: 30px 130px 10px 130px;">
+                                    <div style="display: inline-block;">
+                                        <div class="dot3"></div>
+                                        <div style="color: #6264f9; margin: 10px 0 0 20px;"> Item Checkup </div>
+                                    </div>
+                                    <div style="position: absolute; top: 300px; left: 525px; background-color: #6264f9; height: 3px; width: 112px;"></div>
+                                    <div style="display: inline-block;">
+                                        <div class="dot3"></div>
+                                        <div style="color: #6264f9; margin: 10px 0 0 20px;"> Item authorized </div>
+                                    </div>
+                                    <div style="position: absolute; top: 300px; left: 680px; background-color: #6264f9; height: 3px; width: 112px;"></div>
+                                    <div style="display: inline-block;">
+                                        <div class="dot3"></div>
+                                        <div style="color: #6264f9; margin: 10px 0 0 20px;"> Item Displayed </div>
+                                    </div>
+                                    <div style="position: absolute; top: 300px; left: 835px; background-color: #999; height: 3px; width: 112px;"></div>
+                                    <div style="display: inline-block;">
+                                        <div class="dot3" id="dot4"></div>
+                                        <div style="color: #999; margin: 10px 0 0 40px;"> Item Sold </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <footer>
+                <div id="home_logo" style="text-align: center; border-bottom: 2px solid #999; border-top: 2px solid #999; padding: 80px 0;">
+                    <img src="Images/cpu logo black background.png" alt="cpu logo" id="image1" >
+                    <div id="logo_name"> GetDget </div>
+                </div>
+        
+                <div style="color: #999; padding: 40px;"> 
+                    <div class="footer_text">Copyright &copy; GetDget. All Rights Reseerved</div> 
+                    <div class="footer_text">Privacy Policy</div> | 
+                    <div class="footer_text">Terms of service</div>
+                    <div id="SMdiv">
+                        <a href=""><i class="fab fa-facebook"></i></a> 
+                        <a href=""><i class="fab fa-instagram-square"></i></a> 
+                        <a href=""><i class="fab fa-twitter"></i></a> 
+                        <a href=""><i class="fas fa-envelope"></i></a> 
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
